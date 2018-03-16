@@ -11,5 +11,9 @@ feature "Users can create new projects" do
     click_button "Create Project"
 
     page.should have_content "Project has been created."
+    project = Project.find_by(name: "Sublime Text 3")
+  #page.current_url.should eq project_url(project)
+    title = "Sublime Text 3 - Projects - Ticketee"
+    page.should have_title title
   end
 end
