@@ -45,7 +45,8 @@ group :development, :test do
 end
 
 group :test do
-	gem 'test-unit'
+  gem 'test-unit'
+  gem "factory_girl_rails", "~> 4.5"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
